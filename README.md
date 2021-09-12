@@ -19,3 +19,9 @@ Since this is a project done back in 2018-2019, it requires python-2.7.
 In order to launch AIMat GUI, please run;
 
     python aimat_gui.py
+
+You may use genetic algorithm for inverse discovery of materials. Parameter setting has been made simple with a GUI.
+
+    python genetic_algorithm.py
+
+![ss_ga](https://user-images.githubusercontent.com/32927933/132995267-af133fc9-990b-484b-a01b-bba6a84d62b5.png)
