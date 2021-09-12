@@ -98,7 +98,7 @@ start_time = time.time()
 
 expected_properties = np.array([expected_er, expected_Qf, expected_Tcf]).reshape(1,3)
 
-SC_CRYSTALS_PATH = "/home/avin/QM/material_data/CPM/filtered_single_crystals.csv"
+SC_CRYSTALS_PATH = "filtered_single_crystals.csv"
 
 def load_material_data(dataset_path):
 	return pd.read_csv(dataset_path)

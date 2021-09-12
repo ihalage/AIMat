@@ -13,7 +13,7 @@ import pickle
 np.set_printoptions(threshold=np.nan)
 
 
-DATASET_PATH = "/home/avin/QM/material_data/CPM/data/"
+DATASET_PATH = "data/"
 
 def load_material_data(dataset_path=DATASET_PATH):
 

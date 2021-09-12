@@ -11,7 +11,7 @@ import tensorflow.contrib.layers as lays
 
 # tf.logging.set_verbosity(tf.logging.INFO)
 
-DATASET_PATH = "/home/avin/QM/material_data/CPM/4000_filtered_composites_final.csv"
+DATASET_PATH = "4000_filtered_composites_final.csv"
 
 
 def load_material_data(dataset_path):
@@ -197,7 +197,7 @@ def train(learn_rate, batch_size):
 
 		except KeyboardInterrupt:
 			print 'Training stopped manually'
-			save_path = saver.save(sess, "/home/avin/QM/material_data/CPM/saved_model/cpm_dnn.ckpt")
+			save_path = saver.save(sess, "saved_model/cpm_dnn.ckpt")
   	# 		print("Model saved in path: %s" % save_path)
 
 

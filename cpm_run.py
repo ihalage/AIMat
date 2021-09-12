@@ -25,7 +25,7 @@ def denormalize(df_normalized,df):
 		result[feature_name] = df_normalized[feature_name] * (max_value - min_value) + min_value
 	return result
 
-DATASET_PATH = "/home/avin/QM/material_data/CPM/4000_filtered_composites_final.csv"
+DATASET_PATH = "4000_filtered_composites_final.csv"
 compound_data = load_material_data(DATASET_PATH)
 compound_data = compound_data.dropna(subset=['Tcf', 'Tcf1', 'Tcf2', 'V1', 'V2'])
 compound_data = compound_data[['er', 'Qf', 'Tcf', 'er1', 'Qf1', 'Tcf1', 'er2', 'Qf2', 'Tcf2', 'V1', 'V2']]
@@ -50,7 +50,7 @@ def predict_properties(new_inputs):
 
 	with tf.Session() as sess:
 		tf.logging.set_verbosity(tf.logging.ERROR)
-		imported_meta.restore(sess, "/home/avin/QM/material_data/CPM/saved_model/cpm_dnn.ckpt")
+		imported_meta.restore(sess, "saved_model/cpm_dnn.ckpt")
 		# print 'Model restored'
 
 		predicted_er = graph.get_tensor_by_name('predicted_er:0')
