@@ -17,7 +17,7 @@ Since this is a project done back in 2018-2019, it requires python-2.7.
 * matplotlib
 
 ### Download trained ML model (too large for github).
-Please download the trained ML model in pickle format from [here](/home/avin/QM/material_data/CPM/saved_model_sintering). This is the ML model used to predict sintering temperature. Create a new dictionary called `saved_model_sintering` in the main directory and place this pickle file inside.
+Please download the trained ML model in pickle format from [here](https://figshare.com/articles/dataset/Pickle_model/16610416). This is the ML model used to predict sintering temperature. Create a new dictionary called `saved_model_sintering` in the main directory and place this pickle file inside.
 
 
 In order to launch AIMat GUI, please run;
